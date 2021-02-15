@@ -1,0 +1,1 @@
+# BimBamJob-test-technique
