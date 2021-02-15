@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./App.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Tondeuse.exe</h1>
+    </header>
+    <main>
+      <div id="intro">
+        <h2>
+          Bienvenue sur tondeuse.exe pour commencer veuillez choisir un fichier
+          d'instruction.
+        </h2>
+        <input type="file" id="file-selector" />
+        <p>
+          Le fichier d'instructions doit être au format txt et doit être composé ligne par ligne
+          de la façon suivante :
+        </p>
+        <ol>
+            <li>
+              largeur et longueur du rectangle collées
+            </li>
+            <li>
+                La suite du fichier permet de piloter toutes les tondeuses qui ont été déployées. Chaque
+                tondeuse a deux lignes la concernant
+                <ul>
+                    <li>la première ligne donne la position initiale de la tondeuse, ainsi que son
+                        orientation. La position et l'orientation sont fournies sous la forme de 2 chiffres et
+                        une lettre, séparés par un espace</li>
+                        <li>la seconde ligne est une séquence
+                            simple de lettres sans espaces ordonnant à la tondeuse d'explorer
+                            la pelouse</li>
+                            <li>Les lettres possibles sont « D », « G » et « A » :
+                                <ul>
+                                    <li>« D » et « G » font pivoter la tondeuse de 90° à droite ou à gauche respectivement, sans
+                                        la déplacer.</li>
+                                        <li>« A » signifie que l'on avance la tondeuse d'une case dans la direction à laquelle elle fait
+                                            face, et sans modifier son orientation.</li>
+                                </ul>
+                            </li>
+                </ul>
+            </li>
+          </ol>
+        <p id='exemple'>Exemple d'un fichier valide :</p>
+        <div id='valide'>
+            <p>55</p>
+            <p>44 S</p>
+            <p>AADGGDADGA</p>
+            <p>22 N</p>
+            <p>GADDAAGADAA</p>
+        </div>
+      </div>
+      
+      <div id="rectangle"></div>
+      <div id="result">
+        <!-- <h3 class='result' id='tondeuse1'></h2>
+            <h3 class='result' id='tondeuse2' data-status='false'></h2> -->
+      </div>
+    </main>
+    <script src="tondeuse.js"></script>
+  </body>
+</html>

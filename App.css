@@ -1,0 +1,137 @@
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(0, 63, 14);
+}
+
+main{
+  text-align: center;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#file-selector{
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+#title{
+  font-size: 8vh;
+  font-weight: bolder;
+}
+
+#intro, #exemple{
+  color: rgb(0, 0, 0);
+  width: 100%;
+  font-weight: bolder;
+  background-color: green;
+  padding: 1rem;
+}
+
+
+
+p, ul, li, ol, input{
+  color: white;
+  text-align: left;
+  font-weight: normal;
+}
+ol{
+  margin-bottom: 1rem;
+}
+li{
+  margin-top: 1rem;
+} 
+
+#rectangle{
+  text-align: center;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#result{
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: space-between;
+}
+
+.result{
+  display: flex;
+  justify-content: flex-start;
+  width: 45%;
+  background-color: rgb(63, 83, 71);
+  padding: 1.5vh;
+}
+
+h2{
+  background-color: rgb(3, 139, 9);
+}
+
+h4{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  font-weight: bolder;
+  color: white;
+}
+
+.grass{
+  height: 15vh;
+  width: 11vw;
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+  background-color: green;
+}
+
+.removedGrass{
+  height: 15vh;
+  width: 11vw;
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+  background-color: rgb(0, 63, 14);
+}
+
+.tondeuseW, .tondeuseE, .tondeuseN, .tondeuseS{
+  height: 15vh;
+  width: 11vw;
+  margin-top: 0.1rem;
+  margin-right: 0.1rem;
+  background-color: grey;
+  
+}
+.tondeuseW{
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.tondeuseE{
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.tondeuseN{
+  clip-path: polygon(100% 25%, 100% 100%, 50% 75%, 0 100%, 0 25%, 50% 0);
+
+}
+.tondeuseS{
+  clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0 75%, 0 0, 50% 25%);
+}
+
