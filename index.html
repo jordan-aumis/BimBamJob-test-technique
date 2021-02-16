@@ -15,11 +15,11 @@
       <div id="intro">
         <h2>
           Bienvenue sur tondeuse.exe pour commencer veuillez choisir un fichier
-          d'instruction.
+          d'instructions.
         </h2>
-        <input type="file" id="file-selector" />
+        <input type="file" id="file-selector" accept=".txt" />
         <p>
-          Le fichier d'instructions doit être au format txt et doit être composé ligne par ligne
+          Le fichier d'instructions doit être au format .txt et doit être composé ligne par ligne
           de la façon suivante :
         </p>
         <ol>
@@ -59,10 +59,11 @@
       
       <div id="rectangle"></div>
       <div id="result">
-        <!-- <h3 class='result' id='tondeuse1'></h2>
-            <h3 class='result' id='tondeuse2' data-status='false'></h2> -->
       </div>
     </main>
-    <script src="tondeuse.js"></script>
+    <script src="utils.js"></script>
+    <script src="grass.js"></script>
+    <script src="mower.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
